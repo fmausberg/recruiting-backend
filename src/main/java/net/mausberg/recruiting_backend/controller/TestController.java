@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.controller;
+package net.mausberg.recruiting_backend.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,12 +13,12 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
+import net.mausberg.recruiting_backend.service.DatabaseService;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.security.SecuritySchemes;
-import net.mausberg.authentication_framework_backend.service.DatabaseService;
 
 /**
  * TestController is a REST controller that provides endpoints for testing the backend and database connectivity.

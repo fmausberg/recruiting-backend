@@ -1,5 +1,5 @@
 //AuthenticationFrameworkBackendApplication.java
-package net.mausberg.authentication_framework_backend;
+package net.mausberg.recruiting_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

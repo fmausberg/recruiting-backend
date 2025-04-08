@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.config;
+package net.mausberg.recruiting_backend.config;
 
 import java.util.Arrays;
 import java.util.List;

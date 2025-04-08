@@ -1,8 +1,7 @@
-package net.mausberg.authentication_framework_backend.model;
+package net.mausberg.recruiting_backend.model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AppUserDTO {
+public class AppUserDTOlimited {
 
 	private Long id;
 	private String username;
@@ -24,14 +23,9 @@ public class AppUserDTO {
 	private String mail;
 	private String phone;
 	private LocalDateTime createdAt;
-	private LocalDateTime mailVerifiedAt;
-	private LocalDateTime verificationTokenCreatedAt;
-	private String source;
-	private String oAuthProviderID;
-	private Set<String> roles;
 	
-	// Constructor that converts AppUser to AppUserDTO
-	public AppUserDTO(AppUser appUser) {
+	// Constructor that converts AppUser to AppUserDTOlimited
+	public AppUserDTOlimited(AppUser appUser) {
 		this.id = appUser.getId();
 		this.username = appUser.getUsername();
 		this.publicName = appUser.getPublicName();
@@ -41,11 +35,6 @@ public class AppUserDTO {
 		this.mail = appUser.getMail();
 		this.phone = appUser.getPhone();
 		this.createdAt = appUser.getCreatedAt();
-		this.mailVerifiedAt = appUser.getMailVerifiedAt();
-		this.verificationTokenCreatedAt = appUser.getVerificationTokenCreatedAt();
-		this.source = appUser.getSource();
-		this.oAuthProviderID = appUser.getOAuthProviderID();
-		this.roles = appUser.getRoles();
 	}
 
 }

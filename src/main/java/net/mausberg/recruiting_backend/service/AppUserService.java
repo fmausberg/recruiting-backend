@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.service;
+package net.mausberg.recruiting_backend.service;
 
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -15,9 +15,9 @@ import org.springframework.stereotype.Service;
 import jakarta.mail.MessagingException;
 import jakarta.persistence.*;
 import lombok.RequiredArgsConstructor;
-import net.mausberg.authentication_framework_backend.config.JwtUtil;
-import net.mausberg.authentication_framework_backend.model.*;
-import net.mausberg.authentication_framework_backend.repository.AppUserRepository;
+import net.mausberg.recruiting_backend.config.JwtUtil;
+import net.mausberg.recruiting_backend.model.*;
+import net.mausberg.recruiting_backend.repository.AppUserRepository;
 
 @Service
 @RequiredArgsConstructor

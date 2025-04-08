@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.model;
+package net.mausberg.recruiting_backend.model;
 
 /**
  * ErrorResponse is a simple class that represents an error message.

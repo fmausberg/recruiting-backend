@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.controller;
+package net.mausberg.recruiting_backend.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.mail.MessagingException;
-import net.mausberg.authentication_framework_backend.config.JwtTokenExpiredException;
-import net.mausberg.authentication_framework_backend.exception.DatabaseConnectionException;
-import net.mausberg.authentication_framework_backend.model.*;
+import net.mausberg.recruiting_backend.config.JwtTokenExpiredException;
+import net.mausberg.recruiting_backend.exception.DatabaseConnectionException;
+import net.mausberg.recruiting_backend.model.*;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 

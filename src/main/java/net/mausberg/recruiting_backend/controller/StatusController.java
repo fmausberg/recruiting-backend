@@ -1,9 +1,10 @@
-package net.mausberg.authentication_framework_backend.controller;
+package net.mausberg.recruiting_backend.controller;
 
-import net.mausberg.authentication_framework_backend.config.DatabaseConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import net.mausberg.recruiting_backend.config.DatabaseConfig;
 
 @RestController
 public class StatusController {

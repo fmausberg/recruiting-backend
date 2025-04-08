@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.service;
+package net.mausberg.recruiting_backend.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

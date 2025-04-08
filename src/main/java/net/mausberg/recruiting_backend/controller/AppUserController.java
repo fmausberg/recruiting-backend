@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.controller;
+package net.mausberg.recruiting_backend.controller;
 
 import java.util.Set;
 
@@ -9,8 +9,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import jakarta.servlet.http.HttpServletRequest;
-import net.mausberg.authentication_framework_backend.model.*;
-import net.mausberg.authentication_framework_backend.service.AppUserService;
+import net.mausberg.recruiting_backend.model.*;
+import net.mausberg.recruiting_backend.service.AppUserService;
 
 /**
  * AppUserController is a REST controller that provides endpoints for managing app users.

@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.controller;
+package net.mausberg.recruiting_backend.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletRequest;
-import net.mausberg.authentication_framework_backend.model.*;
-import net.mausberg.authentication_framework_backend.service.AppUserService;
+import net.mausberg.recruiting_backend.model.*;
+import net.mausberg.recruiting_backend.service.AppUserService;
 
 /**
  * AuthController is a REST controller that provides endpoints for user authentication and registration.

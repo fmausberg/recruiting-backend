@@ -1,9 +1,9 @@
-package net.mausberg.authentication_framework_backend.repository;
-
-import net.mausberg.authentication_framework_backend.model.AppUser;
+package net.mausberg.recruiting_backend.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import net.mausberg.recruiting_backend.model.AppUser;
 
 @Repository
 public interface AppUserRepository extends JpaRepository<AppUser, Long> {

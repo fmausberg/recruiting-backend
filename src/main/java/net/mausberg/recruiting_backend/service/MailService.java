@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.service;
+package net.mausberg.recruiting_backend.service;
 
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import jakarta.mail.*;
 import jakarta.mail.internet.*;
-import net.mausberg.authentication_framework_backend.model.AppUser;
+import net.mausberg.recruiting_backend.model.AppUser;
 
 @Service
 public class MailService {

@@ -10,13 +10,13 @@
     </parent>
     
     <groupId>net.mausberg</groupId>
-    <artifactId>authframework-backend</artifactId>
+    <artifactId>recruiting-backend</artifactId>
     <version>0.2.5</version>
     <packaging>jar</packaging>
     
-    <name>authframework-backend</name>
-    <description>The Back End of my Authentication Framework</description>
-    <url>https://github.com/fmausberg/authframework-backend</url>
+    <name>recruiting-backend</name>
+    <description>The Back End of my Recruiting Application</description>
+    <url>https://github.com/fmausberg/recruiting-backend</url>
     
     <properties>
         <java.version>21</java.version>

@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.model;
+package net.mausberg.recruiting_backend.model;
 
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package net.mausberg.authentication_framework_backend.config;
+package net.mausberg.recruiting_backend.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
