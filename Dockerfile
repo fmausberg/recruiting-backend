@@ -5,5 +5,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/authframework-backend.jar authframework-backend.jar
-ENTRYPOINT ["java", "-jar", "authframework-backend.jar"]
+COPY --from=build /app/target/recruiting-backend.jar recruiting-backend.jar
+ENTRYPOINT ["java", "-jar", "recruiting-backend.jar"]

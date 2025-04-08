@@ -7,15 +7,20 @@ services:
     container_name: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}  # Using password from .env
-      MYSQL_DATABASE: authframework
+      MYSQL_DATABASE: recruiting
       MYSQL_USER: ${DB_USERNAME}
       MYSQL_PASSWORD: ${DB_PASSWORD}
     networks:
-      - authframework
+      - recruiting
     ports:
       - "3306:3306"
     volumes:
       - mariadb_data:/var/lib/mysql  # Persist data
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   # phpMyAdmin container
   phpmyadmin:
@@ -24,16 +29,16 @@ services:
     environment:
       PMA_HOST: mariadb
     networks:
-      - authframework
+      - recruiting
     ports:
       - "8888:80"
 
   # Spring Boot Backend container
-  authframework-backend:
+  recruiting-backend:
     build: .
-    container_name: authframework-backend
+    container_name: recruiting-backend
     networks:
-      - authframework
+      - recruiting
     ports:
       - "8080:8080"
     environment:
@@ -47,12 +52,13 @@ services:
       MAIL_PASSWORD: ${MAIL_PASSWORD}  # Using MAIL_PASSWORD from .env
       ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}  # Using ALLOWED_ORIGINS from .env
     depends_on:
-      - mariadb
+      mariadb:
+        condition: service_healthy
     env_file:
       - .env  # Ensure .env is loaded
 
 networks:
-  authframework:
+  recruiting:
     external: true
 
 volumes:
