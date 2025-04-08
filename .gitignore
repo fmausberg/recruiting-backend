@@ -1,0 +1,80 @@
+# --- General OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Java Spring Boot Backend ---
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Maven target directory
+target/
+!target/site/apidocs/
+
+# Gradle build folder
+build/
+
+# Eclipse specific files
+*.classpath
+*.project
+.settings/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+out/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- Common Exclusions ---
+
+# Local environment configuration files
+.env
+*.env
+
+# IDE files and metadata
+.vscode/
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
