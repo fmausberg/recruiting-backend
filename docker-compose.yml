@@ -16,11 +16,11 @@ services:
       - "3306:3306"
     volumes:
       - mariadb_data:/var/lib/mysql  # Persist data
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+#    healthcheck:
+#      test: ["CMD-SHELL", "mysql -u${DB_USERNAME} -p${DB_PASSWORD} -e 'SELECT 1' || exit 1"]
+#      interval: 30s
+#      timeout: 10s
+#      retries: 10
 
   # phpMyAdmin container
   phpmyadmin:
@@ -52,8 +52,8 @@ services:
       MAIL_PASSWORD: ${MAIL_PASSWORD}  # Using MAIL_PASSWORD from .env
       ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}  # Using ALLOWED_ORIGINS from .env
     depends_on:
-      mariadb:
-        condition: service_healthy
+      - mariadb #:
+#        condition: service_healthy
     env_file:
       - .env  # Ensure .env is loaded
 
